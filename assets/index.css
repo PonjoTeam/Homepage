@@ -213,6 +213,14 @@ body {
     color: white;
 }
 
+.discord-link:hover {
+    color: white;
+}
+
+.discord-link:visited {
+    color: white;
+}
+
 .container {
     width: 90vw;
     height: 90vh;
