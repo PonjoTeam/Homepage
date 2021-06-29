@@ -189,6 +189,30 @@ body {
     color: rgb(51, 140, 255);
 }
 
+#about_container:link {
+    color: white;
+}
+
+#about_container:hover {
+    color: white;
+}
+
+#about_container:visited {
+    color: white;
+}
+
+#container:link {
+    color: white;
+}
+
+#work:link {
+    color: white;
+}
+
+.discord-link {
+    color: white;
+}
+
 .container {
     width: 90vw;
     height: 90vh;
