@@ -211,14 +211,17 @@ body {
 
 .discord-link {
     color: white;
+    text-decoration: none;
 }
 
 .discord-link:hover {
     color: white;
+    text-decoration: none;
 }
 
 .discord-link:visited {
     color: white;
+    text-decoration: none;
 }
 
 .container {
