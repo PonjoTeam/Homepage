@@ -1,44 +1,53 @@
-function showabout() {
+function showMissionContainer() {
 
-    $("#about_container").css("display","inherit");
-    $("#about_container").addClass("animated slideInLeft");
-    setTimeout(function(){
+    $("#ponjo-mission-container").css("display", "inherit").addClass("animated slideInLeft");
+
+    setTimeout(function() {
         $("#about_container").removeClass("animated slideInLeft");
-    },800);
+    },1000);
+
 }
 
-function closeabout() {
-    $("#about_container").addClass("animated slideOutLeft");
-    setTimeout(function(){
-        $("#about_container").removeClass("animated slideOutLeft");
-        $("#about_container").css("display","none");
-    },800);
+function closeMissionContainer() {
+
+    $("#ponjo-mission-container").addClass("animated slideOutLeft");
+
+    setTimeout(function() {
+
+        $("#ponjo-mission-container").removeClass("animated slideOutLeft").css("display", "none");
+    },1000);
 }
 
-function showwork() {
-    $("#work_container").css("display","inherit");
-    $("#work_container").addClass("animated slideInRight");
-    setTimeout(function(){
-        $("#work_container").removeClass("animated slideInRight");
-    },800);
+function showProjectsContainer() {
+
+    $("#ponjo-projects-container").css("display", "inherit").addClass("animated slideInRight");
+
+    setTimeout(function() {
+        $("#ponjo-projects-container").removeClass("animated slideInRight");
+    },1000);
+
 }
 
-function closework() {
-    $("#work_container").addClass("animated slideOutRight");
-    setTimeout(function(){
-        $("#work_container").removeClass("animated slideOutRight");
-        $("#work_container").css("display","none");
-    },800);
+function closeProjectsContainer() {
+
+    $("#ponjo-projects-container").addClass("animated slideOutRight");
+
+    setTimeout(function() {
+        $("#ponjo-projects-container").removeClass("animated slideOutRight").css("display", "none");
+    },1000);
+
 }
 
 setTimeout(function() {
-    $("#loading").addClass("animated fadeOut");
+
+    $("#ponjo-loading").addClass("animated fadeOut");
+
     setTimeout(function() {
-      $("#loading").removeClass("animated fadeOut");
-      $("#loading").css("display","none");
+      $("#ponjo-loading").removeClass("animated fadeOut").css("display","none");
       $("#box").css("display","none");
       $("#about").removeClass("animated fadeIn");
       $("#contact").removeClass("animated fadeIn");
       $("#work").removeClass("animated fadeIn");
     },1000);
+
 },1500);
