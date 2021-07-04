@@ -16,7 +16,7 @@ body {
     height: 100vh;
     position: fixed;
     background: rgb(51, 140, 255);
-    z-index: 999;
+    z-index: 50;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -50,7 +50,7 @@ a:hover {
 #ponjo-box {
     width: 100vw;
     height: 100vh;
-    z-index: 9;
+    z-index: 20;
     position: fixed;
     top: 0;
 }
@@ -94,7 +94,7 @@ a:hover {
     position: fixed;
     top: 0;
     text-align: center;
-    z-index: 1;
+    z-index: 2;
     color: #fff;
     padding-bottom: 10vh;
 }
@@ -228,7 +228,7 @@ a:hover {
     padding: 5vh 5vw;
     background: rgb(51, 140, 255);
     color: #fff;
-    z-index: 9;
+    z-index: 12;
     position: fixed;
     max-height: 100vh;
     overflow-y: auto;
@@ -305,7 +305,7 @@ a:hover {
     padding: 5vh 4vw;
     text-align: right;
     position: fixed;
-    z-index: 1;
+    z-index: 8;
     bottom: 0;
     font-size: 16px;
     font-weight: bold;
@@ -319,6 +319,15 @@ a:hover {
     position: fixed;
     width: 100vw;
     height: 100vh;
+}
+
+.box1 {
+    background: rgb(51, 140, 255);
+}
+
+.box2 {
+    background: rgb(51, 140, 255);
+    margin-left: -5px;
 }
 
 @media (max-width: 800px) {

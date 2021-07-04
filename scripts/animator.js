@@ -46,7 +46,6 @@ setTimeout(function() {
       $("#ponjo-loading").removeClass("animated fadeOut").css("display","none");
       $("#ponjo-box").css("display","none");
       $("#ponjo-about").removeClass("animated fadeIn");
-      //$("#contact").removeClass("animated fadeIn");
       $("#ponjo-projects").removeClass("animated fadeIn");
     },1000);
 
