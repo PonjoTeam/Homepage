@@ -23,8 +23,12 @@ body {
     align-items: center;
 }
 
+a:hover {
+    cursor: pointer;
+}
+
 #ponjo-spinner {
-    animation: rotate 0.56s infinite linear;
+    animation: rotate 1s infinite linear;
     width: 50px;
     height: 50px;
     border: 12px solid #fff;
@@ -35,6 +39,7 @@ body {
 
 .ponjo-list {
     font-size: larger;
+    list-style-type: square;
 }
 
 @keyframes rotate {
@@ -222,8 +227,8 @@ body {
 }
 
 .discord-link:hover {
-    color: white;
     text-decoration: underline;
+    color: #b5bac5;
 }
 
 .discord-link:visited {
@@ -255,7 +260,7 @@ body {
 }
 
 .container section {
-    margin: 8vh 0;
+    margin: 0;
 }
 
 #used div{
@@ -384,23 +389,6 @@ body {
     position: fixed;
     width: 100vw;
     height: 100vh;
-}
-
-::-webkit-scrollbar {
-    width: 5px;
-    height: 5px;
-}
-
-::-webkit-scrollbar-track {
-    background: #fff; 
-}
-
-::-webkit-scrollbar-thumb {
-    background: rgb(255, 255, 255);
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: rgb(255, 255, 255);
 }
 
 ::selection {
