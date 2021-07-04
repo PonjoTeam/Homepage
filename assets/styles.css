@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+body {
+    padding: 0;
+    margin: 0;
+    background:linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://images.hdqwalls.com/wallpapers/forest-dark-4k.jpg") center center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#ponjo-loading {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background: rgb(51, 140, 255);
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+#ponjo-spinner {
+    animation: rotate 1s infinite linear;
+    width: 50px;
+    height: 50px;
+    border: 12px solid #fff;
+    border-bottom: 12px solid rgb(51, 140, 255);
+    border-radius: 50%;
+    margin: 0;
+}
+
+.ponjo-list {
+    font-size: larger;
+    list-style-type: square;
+}
+
+@keyframes rotate {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+#ponjo-box {
+    width: 100vw;
+    height: 100vh;
+    z-index: 9;
+    position: fixed;
+    top: 0;
+}
+
+#ponjo-box div {
+    width: 16.66vw;
+    height: 100%;
+    display: inline-block;
+}
+
+#ponjo-menu {
+    width: 100%;
+    text-align: center;
+    margin: 6vh 0;
+    display: none;
+    color: white;
+}
+
+#ponjo-menu a {
+    margin: 0 6%;
+    font-size: 19px;
+    text-decoration: underline;
+    color: white;
+    -webkit-transition: color 1s;
+    -moz-transition: color 1s;
+    -ms-transition: color 1s;
+    -o-transition: color 1s;
+    transition: color 1s;
+}
+
+#ponjo-menu a:hover {
+    color: rgb(51, 140, 255);
+}
+
+#ponjo-middle {
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    text-align: center;
+    z-index: 1;
+    color: #fff;
+    padding-bottom: 10vh;
+}
+
+#ponjo-middle h1 {
+    color: rgb(51, 140, 255);
+    font-size: 70px;
+    text-decoration: underline;
+}
+
+#ponjo-about {
+    width: 10vw;
+    height: 10vw;
+    text-align: center;
+    font-size: 25px;
+    transform: rotate(-90deg);
+    background: transparent;
+    color: #fff;
+    position: fixed;
+    left: 0;
+    bottom: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 4;
+    transition: 0.4s ease-in-out;
+    border-radius: 0 0 100px 100px;
+}
+
+#ponjo-projects {
+    width: 10vw;
+    height: 10vw;
+    text-align: center;
+    font-size: 25px;
+    transform: rotate(90deg);
+    background: transparent;
+    color: #fff;
+    position: fixed;
+    right: 0;
+    bottom: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 4;
+    transition: 0.4s ease-in-out;
+    border-radius: 0 0 100px 100px;
+}
+
+#ponjo-about:hover {
+    background: rgb(51, 140, 255);
+    cursor: pointer;
+}
+
+#ponjo-projects:hover {
+    background: rgb(51, 140, 255);
+    cursor: pointer;
+}
+
+.ponjo-social {
+    color: #fff;
+    font-size: 22px;
+    border-radius: 50%;
+    transition: 0.4s ease-in-out;
+    margin: 0 8px;
+    text-align: center;
+}
+
+.ponjo-social:hover {
+    cursor: pointer;
+    color: rgb(51, 140, 255);
+}
+
+#ponjo-mission-container:link {
+    color: white;
+    text-decoration: underline;
+    -webkit-transition: color 1s;
+    -moz-transition: color 1s;
+    -ms-transition: color 1s;
+    -o-transition: color 1s;
+    transition: color 1s;
+}
+
+#ponjo-mission-container:hover {
+    color: white;
+}
+
+#ponjo-mission-container:visited {
+    color: white;
+    text-decoration: underline;
+}
+
+#ponjo-container:link {
+    color: white;
+    text-decoration: underline;
+}
+
+#ponjo-projects:link {
+    color: white;
+}
+
+.ponjo-link {
+    color: white;
+    text-decoration: underline;
+    -webkit-transition: color 1s;
+    -moz-transition: color 1s;
+    -ms-transition: color 1s;
+    -o-transition: color 1s;
+    transition: color 1s;
+}
+
+.ponjo-link:hover {
+    text-decoration: underline;
+    color: #b5bac5;
+}
+
+.ponjo-link:visited {
+    color: white;
+    text-decoration: underline;
+}
+
+.footer-center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+}
+
+.ponjo-container {
+    width: 90vw;
+    height: 90vh;
+    padding: 5vh 5vw;
+    background: rgb(51, 140, 255);
+    color: #fff;
+    z-index: 9;
+    position: fixed;
+    max-height: 100vh;
+    overflow-y: auto;
+    display: none;
+}
+
+#ponjo-middle table {
+    width: 30%;
+    margin: 6vh auto;
+}
+
+#ponjo-middle table tr td {
+    text-align: center;
+}
+
+.ponjo-container div {
+    font-size: 25px;
+    margin: 20px 0;
+    transition: 0.4s ease-in-out;
+}
+
+.ponjo-container div:hover {
+    cursor: pointer;
+}
+
+.ponjo-container section {
+    margin: 0;
+}
+
+#used div {
+    font-size: 14px !important;
+    display: inline-block;
+    padding: 8px 10px;
+    border: 2px solid #fff;
+    margin: 0 10px;
+    border-radius: 50px;
+}
+
+#used:hover {
+    cursor: text;
+}
+
+#used div:hover {
+    cursor: text;
+}
+
+.ponjo-container h1 {
+    font-size: 60px;
+    text-decoration: underline;
+}
+
+.ponjo-container p {
+    font-size: 21px;
+}
+
+.ponjo-container form textarea {
+    width: 96%;
+    margin: 20px 1%;
+    padding: 8px 10px;
+    border: 0;
+    border-bottom: 3px solid rgb(51, 140, 255);
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    background: transparent;
+    resize: none;
+    transition: 0.4s ease-in-out;
+    color: #fff;
+    font-weight: bold;
+}
+
+#ponjo-footer {
+    color: #fff;
+    width: 92vw;
+    padding: 5vh 4vw;
+    text-align: right;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#ponjo-footer a {
+    color: rgb(51, 140, 255);
+}
+
+#particles-js {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+}
+
+@media (max-width: 800px) {
+
+    #ponjo-about {
+        display: none;
+    }
+
+    #contact {
+        display: none;
+    }
+
+    #ponjo-projects {
+        display: none;
+    }
+
+    #footer {
+        text-align: center;
+    }
+
+    #ponjo-middle {
+        width: 90vw;
+        padding: 0 5vw;
+    }
+
+    #ponjo-middle table {
+        width: 80%;
+    }
+
+    #ponjo-menu {
+        display: inline-block;
+    }
+
+    #onlywide {
+        display: none !important;
+    }
+
+    .box2 {
+        margin-left: 0 !important;
+    }
+
+    #ponjo-box div {
+        width: 100%;
+    }
+}
