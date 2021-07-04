@@ -80,17 +80,8 @@ a:hover {
 #menu a {
     margin: 0 6%;
     font-size: 19px;
+    color: #fff;
     text-decoration: underline;
-    color: white;
-    -webkit-transition: color 1s;
-    -moz-transition: color 1s;
-    -ms-transition: color 1s;
-    -o-transition: color 1s;
-    transition: color 1s;
-}
-
-#menu a:hover {
-    color: rgb(51, 140, 255);
 }
 
 #middle {
@@ -210,11 +201,6 @@ a:hover {
 #ponjo-mission-container:link {
     color: white;
     text-decoration: underline;
-    -webkit-transition: color 1s;
-    -moz-transition: color 1s;
-    -ms-transition: color 1s;
-    -o-transition: color 1s;
-    transition: color 1s;
 }
 
 #ponjo-mission-container:hover {
@@ -229,33 +215,23 @@ a:hover {
 #container:link {
     color: white;
     text-decoration: underline;
-    -webkit-transition: color 1s;
-    -moz-transition: color 1s;
-    -ms-transition: color 1s;
-    -o-transition: color 1s;
-    transition: color 1s;
 }
 
 #work:link {
     color: white;
 }
 
-.ponjo-link {
+.discord-link {
     color: white;
     text-decoration: underline;
-    -webkit-transition: color 1s;
-    -moz-transition: color 1s;
-    -ms-transition: color 1s;
-    -o-transition: color 1s;
-    transition: color 1s;
 }
 
-.ponjo-link:hover {
+.discord-link:hover {
     text-decoration: underline;
     color: #b5bac5;
 }
 
-.ponjo-link:visited {
+.discord-link:visited {
     color: white;
     text-decoration: underline;
 }
@@ -312,7 +288,7 @@ a:hover {
     margin: 0;
 }
 
-#used div {
+#used div{
     font-size: 14px !important;
     display: inline-block;
     padding: 8px 10px;
