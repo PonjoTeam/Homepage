@@ -236,6 +236,28 @@ a:hover {
     text-decoration: underline;
 }
 
+.footer-center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+}
+
+.sub-footer-icons {
+    color: white;
+    font-size: larger;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.sub-footer-icons:visited {
+    color: white;
+}
+
+.sub-footer-icons:hover {
+    color: #b5bac5;
+}
+
 .container {
     width: 90vw;
     height: 90vh;
