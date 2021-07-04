@@ -244,6 +244,7 @@ a:hover {
 }
 
 .sub-footer-icons {
+    text-decoration: none;
     color: white;
     font-size: larger;
     padding-left: 10px;
@@ -252,10 +253,12 @@ a:hover {
 
 .sub-footer-icons:visited {
     color: white;
+    text-decoration: none;
 }
 
 .sub-footer-icons:hover {
     color: #b5bac5;
+    text-decoration: none;
 }
 
 .container {
