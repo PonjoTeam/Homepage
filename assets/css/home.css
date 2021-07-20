@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
 
-div {
-    overflow-x: scroll;
-    overflow-y: hidden;
+html, body {
+    overflow-x: hidden;
+}
+body {
+    position: relative;
 }
 
 body {
@@ -218,6 +220,21 @@ a:hover {
     color: rgb(51, 140, 255);
 }
 
+.discord-link {
+    color: white;
+    text-decoration: underline;
+}
+
+.discord-link:hover {
+    text-decoration: underline;
+    color: #b5bac5;
+}
+
+.discord-link:visited {
+    color: white;
+    text-decoration: underline;
+}
+
 #ponjo-mission-container:link {
     color: white;
     text-decoration: underline;
@@ -246,19 +263,42 @@ a:hover {
     color: white;
 }
 
-.discord-link {
+.ponjo-link {
     color: white;
     text-decoration: underline;
+    transition: 0.3s;
 }
 
-.discord-link:hover {
+.ponjo-link:hover {
     text-decoration: underline;
     color: #b5bac5;
+    transition: 0.3s;
+    font-size: 21px;
 }
 
-.discord-link:visited {
+.ponjo-link:visited {
     color: white;
     text-decoration: underline;
+    transition: 0.3s;
+}
+
+.ponjo-icon-link {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.ponjo-icon-link:hover {
+    text-decoration: none;
+    color: #b5bac5;
+    transition: 0.3s;
+    font-size: 27px;
+}
+
+.ponjo-icon-link:visited {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
 }
 
 .footer-center {

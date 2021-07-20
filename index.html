@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="assets/css/home.css">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -42,8 +42,8 @@
 <a id="work" onclick="showProjectsContainer()" class="animated fadeIn" style="animation-delay:2.2s;">Projects</a>
 <div id="middle" class="animated slideInDown" style="animation-delay:2.0s;">
     <h1>Ponjo Team</h1>
-    <h2>Your next-generation development team. <a href="" class="discord-link">Click here</a> to learn more.</h2>
-    <div id="menu">
+    <h2>Your <a href="about/index.html" class="discord-link">next-generation</a> development team.</h2>
+    <div id="menu" style="padding: 5px">
         <a onclick="showMissionContainer()">About</a>
         <a onclick="showProjectsContainer()">Projects</a>
     </div>
@@ -58,7 +58,7 @@
     </table>
 </div>
 <div id="ponjo-projects-container" class="container">
-    <div onclick="closeProjectsContainer()"><i class="fas fa-angle-right"></i></div>
+    <div onclick="closeProjectsContainer()" class="ponjo-link"><i class="fas fa-angle-right"></i></div>
     <h1>Our Projects</h1>
     <section>
         <h2>What do we work on?</h2>
@@ -77,7 +77,7 @@
             <li>mySQL, SQLite3, & MongoDB</li>
             <li>Ubuntu 18.04+ & CentOS</li>
         </ul>
-        <h2><i class="fa fa-code"></i> PonjoAPI</h2>
+        <h2><i class="fa fa-code ponjo-icon-link"></i> PonjoAPI</h2>
         <p>
             The Ponjo API is an easy-to-use RESTFUL API for developers, with astonishingly simple endpoints. Developing, debugging, and/or testing your web or mobile application can be quite challenging to do without having any sort of data to work with. This is the main reason for which the Ponjo API exists! It is a simple API that allows beginner developers to work with aforementioned data to test their own applications. Use any of our API endpoints to fetch data to make testing your web application a breeze. Created and developed by Eerie, the API has countless features, some of which are listed below.
         </p>
@@ -91,9 +91,9 @@
             Developers can easily pass in a valid route and get a multitude of schemes. The API has a wide variety of modules, with complete documentation that is easily understandable for developers of all skill levels.
         </p>
 
-        <p>If you're interested in learning more about the API or using it, <a href="https://api.ponjo.club" class="discord-link">click here</a>.</p>
+        <p>If you're interested in learning more about the API or using it, <a href="https://api.ponjo.club" class="ponjo-link">click here</a>.</p>
 
-        <h2><i class="fas fa-code-branch"></i> The Helios Network</h2>
+        <h2><i class="fas fa-code-branch ponjo-icon-link"></i> The Helios Network</h2>
 
         <p>
             Helios Practice was a public Minecraft practice PVP server for the Bedrock Edition variant of the game.
@@ -104,20 +104,21 @@
             the end of the server's 8-month period, being officially released on June 14th, 2020.
         </p>
 
-        <h2><i class="fas fa-star-and-crescent"></i> Stellar</h2>
-        <h2><i class="fas fa-robot"></i> AutoDocs</h2>
-        <h2><i class="fab fa-pied-piper"></i> Slashify</h2>
+        <h2><i class="fas fa-star-and-crescent ponjo-icon-link"></i> Stellar</h2>
+        <h2><i class="fas fa-robot ponjo-icon-link"></i> AutoDocs</h2>
+        <h2><i class="fas fa-search-minus ponjo-icon-link"></i> PonjoSty</h2>
+        <h2><i class="fab fa-pied-piper ponjo-icon-link"></i> Slashify</h2>
 
-        <h2><i class="fa fa-headphones"></i> Elixir Bot</h2>
-        <h2><i class="fa fa-shield-alt"></i> The Guardian</h2>
-        <h2><i class="fa fa-bomb"></i> Atomizer</h2>
-        <h2><i class="fa fa-poo-storm"></i> Maelstrom</h2>
-        <h2><i class="fa fa-grin-squint-tears"></i> Sound Pewp</h2>
+        <h2><i class="fa fa-headphones ponjo-icon-link"></i> Elixir Bot</h2>
+        <h2><i class="fa fa-shield-alt ponjo-icon-link"></i> The Guardian</h2>
+        <h2><i class="fa fa-bomb ponjo-icon-link"></i> Atomizer</h2>
+        <h2><i class="fa fa-poo-storm ponjo-icon-link"></i> Maelstrom</h2>
+        <h2><i class="fa fa-grin-squint-tears ponjo-icon-link"></i> Sound Pewp</h2>
 
     </section>
 </div>
 <div id="ponjo-mission-container" class="container">
-    <div onclick="closeMissionContainer()"><i class="fas fa-angle-left"></i></div>
+    <div onclick="closeMissionContainer()" class="ponjo-link"><i class="fas fa-angle-left"></i></div>
     <h1>Our Mission</h1>
     <section>
         <h2>Who are we?</h2>
@@ -125,13 +126,13 @@
             We are a group of committed developers and hardworking organizers with the goal to develop customized programs and software for our clients. We are committed to our work, and we dedicate ourselves to create work that benefits the public.
         </p>
         <p>
-            If you have any questions about us, don't hesitate to <a href="https://ponjo.club/discord" class="discord-link">contact us on our Discord server.</a>
+            If you have any questions about us, don't hesitate to <a href="https://ponjo.club/discord" class="ponjo-link">contact us on our Discord server.</a>
         </p>
 
     </section>
 
 </div>
-<div id="footer">
+<div id="footer" style="padding-bottom: 12px">
     Copyright 2020-21 Ponjo Team.<br> <a href="https://eerie.codes">Created by Eerie</a> - <a href="mailto:eerie@ponjo.club">eerie@ponjo.club</a>
 </div>
 <script src="scripts/animator.js" type="text/javascript"></script>
