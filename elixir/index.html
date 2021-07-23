@@ -47,6 +47,8 @@
 
     <center><hr class="solid"></center>
 
+    <h1 id="elixir-countdown" style="font-family: 'American Typewriter', serif"><b></b></h1>
+
     <h4 class="w3-center w3-animate-zoom">PRISTINE QUALITY</h4>
 
     <p class="w3-block w3-animate-zoom">
@@ -162,6 +164,31 @@
     }
     prevScrollpos = currentScrollPos;
   }
+</script>
+<script>
+
+  const countDownDate = new Date("Aug 15, 2021 18:00:00").getTime();
+
+  const countdown = setInterval(function () {
+
+    const now = new Date().getTime();
+    const distance = countDownDate - now;
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("elixir-countdown").innerHTML = days + "d " + hours + "h "
+            + minutes + "m " + seconds + "s ";
+
+    if (distance < 0) {
+      clearInterval(countdown);
+      document.getElementById("elixir-countdown").innerHTML = "OFFICIALLY LAUNCHED!";
+    }
+
+  }, 1000);
+
 </script>
 
 </body>
