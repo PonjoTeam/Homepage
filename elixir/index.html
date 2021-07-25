@@ -99,12 +99,80 @@
           <td>Apply or remove audio filters from the currently playing song.</td>
         </tr>
         <tr>
+          <td>e!forward {duration}</td>
+          <td>Fast forward through the song by the specified time.</td>
+        </tr>
+        <tr>
+          <td>e!loop</td>
+          <td>Toggle loop mode on or off.</td>
+        </tr>
+        <tr>
+          <td>e!nowplaying</td>
+          <td>View information about the currently playing song.</td>
+        </tr>
+        <tr>
+          <td>e!pause</td>
+          <td>Pause the song.</td>
+        </tr>
+        <tr>
+          <td>e!play {song:url:playlist}</td>
+          <td>Play a song or playlist and add it to the queue.</td>
+        </tr>
+        <tr>
+          <td>e!queue</td>
+          <td>View all songs in the queue.</td>
+        </tr>
+        <tr>
+          <td>e!resume</td>
+          <td>Resume the currently paused song.</td>
+        </tr>
+        <tr>
+          <td>e!rewind {duration}</td>
+          <td>Rewind the currently playing song by the specified duration.</td>
+        </tr>
+        <tr>
+          <td>e!seek {duration}</td>
+          <td>Seek through the song.</td>
+        </tr>
+        <tr>
+          <td>e!shuffle</td>
+          <td>Shuffle the song queue.</td>
+        </tr>
+        <tr>
+          <td>e!stop</td>
+          <td>Stops Elixir from playing songs and has it leave the voice channel.</td>
+        </tr>
+        <tr>
+          <td>e!volume {amplifier}</td>
+          <td>Amplify the song's volume.</td>
+        </tr>
+        <tr>
           <td>e!help</td>
           <td>Shows a list of all available commands.</td>
         </tr>
         <tr>
+          <td>e!info</td>
+          <td>View information about the bot.</td>
+        </tr>
+        <tr>
+          <td>e!ping</td>
+          <td>View the bot's websocket and message latency.</td>
+        </tr>
+        <tr>
+          <td>e!invite</td>
+          <td>Invite the bot to your server.</td>
+        </tr>
+        <tr>
           <td>e!about</td>
           <td>Displays information & statistics about Elixir.</td>
+        </tr>
+        <tr>
+          <td>e!prefix {new-prefix}</td>
+          <td>View or change the bot's command prefix.</td>
+        </tr>
+        <tr>
+          <td>e!changelog</td>
+          <td>View recent patches, bug fixes, and updates.</td>
         </tr>
       </table>
 
@@ -129,6 +197,17 @@
         <li>Refactored reply system - all replies are now in-line.</li>
         <li>Fixed an issue where YouTube playlists would not be added to server queues.</li>
       </ul>
+    </div>
+
+    <center><hr class="solid"></center>
+
+    <div class="w3-panel w3-pale-blue w3-leftbar w3-border-blue w3-border">
+      <p class="w3-block"><i class="fa fa-exclamation"></i> Change the default prefix!</p>
+      <p class="w3-block">
+        Not a fan of the default <code>e!</code> prefix? Elixir is completely customizable! You can
+        easily change the prefix of the bot by running the command <code>e!prefix {new-prefix}</code>.
+        Don't forget, you can always use built-in slash commands instead!
+      </p>
     </div>
 
     <h4 class="w3-center w3-animate-zoom">PRIVACY & DATA</h4>
