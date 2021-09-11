@@ -1398,7 +1398,7 @@ function isInArray(value, array) {
 }
 
 
-/* ---------- particles.js functions - start ------------ */
+/* ---------- particleManager.js functions - start ------------ */
 
 window.pJSDom = [];
 

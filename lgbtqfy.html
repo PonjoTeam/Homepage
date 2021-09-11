@@ -1,25 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<title>LGBTfy</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<meta property="og:title" content="LGBTfy">
-<meta property="og:description" content="A simple tool to add pride flag borders to your profile pictures/online avatars. Created by the Ponjo Development team.">
-<meta property="og:image:url" content="https://i.ibb.co/PTRYL7V/LGBTfy-Official.jpg">
-<meta property="og:image:secure_url" content="https://i.ibb.co/PTRYL7V/LGBTfy-Official.jpg">
-<meta name="theme-color" content="#e75480">
-
-<meta name="keywords" content="lgbtfy, pride, pride avatar generator, profile picture generator, pfp, lgbtq">
-
-<link rel="icon" href="https://i.ibb.co/PTRYL7V/LGBTfy-Official.jpg" type="img/jpeg">
-
+<head>
+    <title>LGBTfy</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="LGBTQfy">
+    <meta property="og:description" content="A simple tool to add pride flag borders to your profile pictures/online avatars. Created by the Ponjo Development team.">
+    <meta property="og:image:url" content="https://raw.githubusercontent.com/Eerie6560/Archives/main/images/icons/LGBTQfy-Logo.jpg">
+    <meta property="og:image:secure_url" content="https://raw.githubusercontent.com/Eerie6560/Archives/main/images/icons/LGBTQfy-Logo.jpg">
+    <meta name="theme-color" content="#e75480">
+    <meta name="keywords" content="lgbtfy, pride, pride avatar generator, profile picture generator, pfp, lgbtq">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="assets/logos/LGBTQfy-Logo.jpg" type="img/jpg">
+</head>
 <body>
-
 <div id="navbar" class="w3-top w3-center w3-round w3-padding-small w3-padding-24 w3-animate-zoom" style="transition: top 0.75s;">
     <div class="w3-bar w3-black w3-card w3-round-large">
         <a href="https://ponjo.club" class="w3-center w3-bar-item w3-button w3-padding-large">HOME</a>
@@ -31,9 +27,8 @@
         <a href="https://ponjo.club/team" class="w3-center w3-bar-item w3-button w3-padding-large w3-hide-small w3-hide-medium">TEAM</a>
     </div>
 </div>
-
-<div class="w3-content" style="max-width:2000px;margin-top:46px">
-    <div class="w3-container w3-content w3-center w3-padding-16" style="max-width:800px" id="band">
+<div class="w3-content" style="max-width:2000px; margin-top:46px;">
+    <div class="w3-container w3-content w3-center w3-padding-16" style="max-width:1200px" id="band">
         <h2 class="w3-center w3-padding-top-24">LGBTfy - Pride Avatar Generator</h2>
         <img src="https://upload.wikimedia.org/wikipedia/commons/4/48/Gay_Pride_Flag.svg" class="w3-animate-zoom" height="30" width="48" alt="">
         <img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Abrosexual_flag.svg" class="w3-animate-zoom" height="40" width="48" alt="">
@@ -43,12 +38,10 @@
         <img src="https://upload.wikimedia.org/wikipedia/commons/f/f8/Lesbian_pride_flag_2018.svg" class="w3-animate-zoom" height="30" width="48" alt="">
         <img src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Transgender_Pride_flag.svg" class="w3-animate-zoom" height="40" width="48" alt="">
         <img src="https://upload.wikimedia.org/wikipedia/commons/7/7d/5-striped_New_Gay_Male_Pride_Flag.svg" class="w3-animate-zoom" height="40" width="48" alt="">
-
         <p class="w3-block w3-animate-zoom">
             Welcome to LGBTfy, a simple LGBTQIA+ pride avatar generator. Easily express yourself by adding pride
             flag colors & flairs around your profile picture.
         </p>
-
         <p class="w3-block w3-animate-zoom">
             The process of LGBTfying your profile picture is extremely simple. First, choose the appropriate flairs
             you would like to add to the borders of your avatar. Next, upload your avatar to the website. Then, you
@@ -56,76 +49,56 @@
             your new avatar to your computer by clicking the button "Download new avatar as JPEG!". Sweet,
             you now have a brand new, flairy pride avatar!
         </p>
-
         <p class="w3-block w3-animate-zoom">
             This project is run by volunteers and donations. If you'd like to contribute to the Ponjo Development
             Team to help keep this project alive, or if you'd like to submit new suggestions for flags to
             be added to the avatar generator, <a href="https://ponjo.club/discord">join our Discord here</a>.
         </p>
-
         <form ondrop="onDrop(event);" ondragover="event.preventDefault()">
-            <div class="w3-center">
-                <label for="scale"></label><input class ="w3-padding-16" id="scale" type="range" min="0.5" max="1.5" step="any" value="1">
+            <div class="w3-center" style="">
+                <label for="scale"></label><input class ="w3-padding-16 w3-animate-zoom" id="scale" type="range" min="0.5" max="1.5" step="any" value="1">
             </div>
-            <center><canvas id="canvas" width="300px" height="300px"></canvas></center>
-            <center><label for="rotate"></label><input class="w3-padding-16" id="rotate" type="range" min="-90" max="90" step="any" value="-30"></center>
+            <center>
+                <canvas id="canvas" width="300px" height="300px" class="w3-animate-zoom"></canvas>
+            </center>
+            <center>
+                <label for="rotate"></label>
+                <input class="w3-padding-16 w3-animate-zoom" id="rotate" type="range" min="-90" max="90" step="any" value="-30">
+            </center>
             <br>
-            <label for="file" class="w3-round-large w3-button w3-black">Upload an image!</label>
+            <label for="file" class="w3-round-large w3-button w3-black w3-animate-zoom">Upload an image!</label>
             <input id='file' type='file' accept='image/*' style="display: none;">
-            <p id="colors" class="w3-padding-16">
-                <template id="color-radio" class="w3-padding-small">
-                    <label><input type="radio" name="color" class="w3-padding-small"></label>
+            <p id="colors" class="w3-padding-16 w3-animate-zoom">
+                <template id="color-radio" class="w3-padding-small w3-animate-zoom">
+                    <label>
+                        <input type="radio" name="color" class="w3-padding-small w3-animate-zoom">
+                    </label>
                 </template>
             </p>
             <p>
-                <a class="w3-center w3-button w3-round-large w3-black" id="download" download="pride-profile-picture.jpg">Download new avatar as JPEG!</a>
+                <a class="w3-center w3-button w3-round-large w3-black w3-animate-zoom" id="download" download="Pride-Avatar.jpg">Download new avatar as JPEG!</a>
             </p>
-            <p class="w3-large w3-padding-top-24">
+            <p class="w3-large w3-padding-top-24 w3-animate-zoom">
                 LGBTQIA+ Reference Links
             </p>
-            <p class="w3-medium w3-center">
-                <a href="https://en.wikipedia.org/wiki/LGBT">LGBTQ+</a>
-                <br>
-                <a href="https://lgbta.wikia.org/wiki/Abrosexual">Abrosexuality</a>
-                <br>
-                <a href="https://en.wikipedia.org/wiki/Asexuality">Asexuality</a>
-                <br>
+            <p class="w3-medium w3-center w3-animate-zoom">
+                <a href="https://en.wikipedia.org/wiki/LGBT">LGBTQ+</a><br>
+                <a href="https://lgbta.wikia.org/wiki/Abrosexual">Abrosexuality</a><br>
+                <a href="https://en.wikipedia.org/wiki/Asexuality">Asexuality</a><br>
                 <a href="https://en.wikipedia.org/wiki/Romantic_orientation#Aromanticism">Aromanticism</a>
             </p>
         </form>
-
     </div>
 </div>
-
-<footer class="w3-container w3-center w3-opacity w3-xlarge">
-
+<footer class="w3-container w3-center w3-opacity w3-xlarge w3-animate-zoom">
     <a href="https://ponjo.club/api"><i class="fa fa-code w3-hover-opacity"></i></a>
     <i class="fa fa-twitter w3-hover-opacity"></i>
     <i class="fa fa-github w3-hover-opacity"></i>
     <p class="w3-medium">© 2020-2021 Ponjo Development.</p>
     <p class="w3-medium"><a href=""><b>Privacy Policy</b></a> <a href=""><b>Terms of Use</b></a></p>
 </footer>
-
-<script src="./scripts/interface.js"></script>
-<script src="./scripts/navbar.js"></script>
-<script src="./scripts/lgbtfy.js"></script>
-<script>
-    window.onbeforeunload = function () {
-        window.scrollTo(0, 0);
-    }
-</script>
-<script>
-    let prevScrollpos = window.pageYOffset;
-    window.onscroll = function() {
-        const currentScrollPos = window.pageYOffset;
-        if (prevScrollpos > currentScrollPos) {
-            document.getElementById("navbar").style.top = "0";
-        } else {
-            document.getElementById("navbar").style.top = "-75px";
-        }
-        prevScrollpos = currentScrollPos;
-    }
-</script>
-
+<script src="scripts/main.js"></script>
+<script src="scripts/interface/loader.js"></script>
+<script src="scripts/interface/lgbtqfy.js"></script>
 </body>
 </html>

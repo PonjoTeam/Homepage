@@ -1,7 +1,6 @@
-'use strict';
+"use strict";
 
 const COLOR_SCHEMES = {
-
     ' LGBTQ+': ['#e50000', '#ff8d00', '#ffee00', '#008121', '#004cff', '#760188'],
     ' Abrosexual': ['#46D294', '#91e6c0', '#ffffff', '#fcaecb', '#EE1766'],
     ' Agender': ['#000000', '#BABABA', '#FFFFFF', '#BAF584'],
@@ -20,16 +19,15 @@ const COLOR_SCHEMES = {
     ' Pansexual': ['#ff1e8c', '#fed818', '#1fb2fd'],
     ' Polysexual': ['#F714BA', '#01D66A', '#1594F6'],
     ' Transgender': ['#5bcffa', '#f5abb9', '#ffffff', '#f5abb9', '#5bcffa'],
-
 };
 
 const $ = (selector) => document.querySelector(selector);
 const canvas = $('#canvas');
-const ctx = canvas.getContext('2d');
+const ctx = canvas.getContext("2d");
 const scale = $('#scale');
 const rotate = $('#rotate');
 const download = $('#download');
-const form = $('form');
+const form = $("form");
 ctx.resetTransform = () => ctx.setTransform(1, 0, 0, 1, 0, 0);
 
 (() => {
@@ -41,7 +39,7 @@ ctx.resetTransform = () => ctx.setTransform(1, 0, 0, 1, 0, 0);
         const label = clone.querySelector('label');
         input.value = name;
         input.checked = i === 1;
-        input.addEventListener('change', redraw);
+        input.addEventListener("change", redraw);
         label.appendChild(document.createTextNode(name));
         list.appendChild(clone);
     });
@@ -49,21 +47,21 @@ ctx.resetTransform = () => ctx.setTransform(1, 0, 0, 1, 0, 0);
 
 const reader = new FileReader();
 const image = new Image();
-reader.onload = () => image.src = reader.result;
+reader.onload = () => image.src = reader.result.toString();
 image.onload = redraw;
 
-$('#file').addEventListener('change', event => {
+$('#file').addEventListener("change", event => {
     reader.readAsDataURL(event.target.files[0])
 });
-scale.addEventListener('change', redraw);
-rotate.addEventListener('change', redraw);
+scale.addEventListener("change", redraw);
+rotate.addEventListener("change", redraw);
 
 function onDrop(event) {
     event.preventDefault();
     const files = event.dataTransfer.files;
     for (let i = 0; i < files.length; i++) {
         const file = files[i];
-        if (file.type.startsWith('image/')) {
+        if (file.type.startsWith("image/")) {
             reader.readAsDataURL(file);
             break;
         }
@@ -71,19 +69,15 @@ function onDrop(event) {
 }
 
 function redraw() {
-
     const halfWidth = canvas.width / 2;
-
     ctx.restore();
     ctx.save();
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-
     const color = $('input[name=color]:checked').value || 'standard';
     const colors = COLOR_SCHEMES[color];
     const radians = rotate.value * Math.PI / 180;
     const rainbowWidth = canvas.width / colors.length;
     const rainbowWidthExtra = rainbowWidth * Math.abs(Math.sin(radians * 2)) * 0.5;
-
     ctx.translate(halfWidth, halfWidth);
     ctx.rotate(radians);
     ctx.translate(-canvas.width, -canvas.width);
@@ -98,27 +92,21 @@ function redraw() {
         else
             ctx.translate(0, rainbowWidth + rainbowWidthExtra);
     });
-
     ctx.resetTransform();
-
     const MARGIN = 30;
-
     ctx.translate(halfWidth, halfWidth);
     ctx.beginPath()
     ctx.arc(0, 0, halfWidth - MARGIN, 0, Math.PI * 2);
     ctx.closePath();
     ctx.clip();
     ctx.resetTransform();
-
     const dimension = Math.min(image.width, image.height) * scale.value;
     const xOffset = (image.width - dimension) / 2;
     const yOffset = (image.height - dimension) / 2;
-
     ctx.drawImage(
         image, xOffset, yOffset, dimension, dimension,
         0, 0, canvas.width, canvas.height
     );
-
     download.href = canvas.toDataURL();
 }
 
