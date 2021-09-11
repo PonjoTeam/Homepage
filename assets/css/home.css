@@ -14,7 +14,7 @@ html, body {
 body {
     padding: 0;
     margin: 0;
-    background:linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://images.hdqwalls.com/wallpapers/forest-dark-4k.jpg") center center;
+    background: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://images.hdqwalls.com/wallpapers/forest-dark-4k.jpg") center center;
     background-size: cover;
     width: 100vw;
     height: 100vh;
