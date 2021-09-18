@@ -1,8 +1,8 @@
 /* -----------------------------------------------
 /* Author : Vincent Garreau  - vincentgarreau.com
 /* MIT license: http://opensource.org/licenses/MIT
-/* Demo / Generator : vincentgarreau.com/particleManager.js
-/* GitHub : github.com/VincentGarreau/particleManager.js
+/* Demo / Generator : vincentgarreau.com/ParticleManager.js
+/* GitHub : github.com/VincentGarreau/ParticleManager.js
 /* v2.0.0
 /* ----------------------------------------------- */
 
