@@ -19,8 +19,8 @@
 <div id="navbar" class="w3-top w3-center w3-round w3-padding-small w3-padding-24 w3-animate-zoom" style="transition: top 0.75s;">
   <div class="w3-bar w3-black w3-card w3-round-large">
     <a href="https://ponjo.club" class="w3-center w3-bar-item w3-button w3-padding-large">HOME</a>
-    <a href="" class="w3-center w3-bar-item w3-button w3-padding-large">INFO</a>
-    <a href="" class="w3-center w3-bar-item w3-button w3-padding-large">PROJECTS</a>
+    <a href="https://ponjo.club/projects" class="w3-center w3-bar-item w3-button w3-padding-large">PROJECTS</a>
+    <a href="https://ponjo.club/lgbtqfy" class="w3-center w3-bar-item w3-button w3-padding-large">LGBTQfy</a>
     <a href="https://ponjo.club/lgbtqfy" class="w3-center w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT US</a>
     <a href="https://ponjo.club/team" class="w3-center w3-bar-item w3-button w3-padding-large w3-hide-small w3-hide-medium">THE TEAM</a>
   </div>
@@ -39,9 +39,9 @@
         Invite Elixir to your server!
       </button>
     </a>
-    <center>
+    <div style="text-align: center;">
       <hr class="solid">
-    </center>
+    </div>
     <h4 class="w3-center w3-animate-zoom">PRISTINE QUALITY</h4>
     <p class="w3-block w3-animate-zoom">
       Elixir makes it possible to listen to your favorite tunes with all of your friends, with pristine quality
@@ -175,7 +175,9 @@
     <a href="https://ponjo.club/elixir/invite"><button class="w3-button w3-center w3-black w3-animate-zoom w3-round-medium">Invite Elixir to your server!</button></a>
   </div>
 </div>
-<center><hr class="solid"></center>
+<div style="text-align: center;">
+  <hr class="solid">
+</div>
 <footer class="w3-container w3-center w3-opacity" style="font-size: 28px">
   <a href="https://ponjo.club/api"><i class="fa fa-code w3-hover-opacity w3-animate-zoom"></i></a>
   <i class="fa fa-twitter w3-hover-opacity w3-animate-zoom"></i>
@@ -184,18 +186,6 @@
   <i class="fa fa-book w3-hover-opacity w3-animate-zoom"></i>
   <p class="w3-medium w3-animate-zoom">© 2020-2021 Ponjo Team. All rights reserved.</p>
 </footer>
-<script src="../assets/scripts/interface/interface.js"></script>
-<script>
-  let prevScrollpos = window.pageYOffset;
-  window.onscroll = function() {
-    const currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
-      document.getElementById("navbar").style.top = "0";
-    } else {
-      document.getElementById("navbar").style.top = "-75px";
-    }
-    prevScrollpos = currentScrollPos;
-  }
-</script>
+<script src="assets/scripts/Main.js"></script>
 </body>
 </html>

@@ -20,12 +20,10 @@
 <div id="navbar" class="w3-top w3-center w3-round w3-padding-small w3-padding-24 w3-animate-zoom" style="transition: top 0.75s;">
     <div class="w3-bar w3-black w3-card w3-round-large">
         <a href="https://ponjo.club" class="w3-center w3-bar-item w3-button w3-padding-large">HOME</a>
-        <a href="" class="w3-center w3-bar-item w3-button w3-padding-large">INFO</a>
-        <a href="" class="w3-center w3-bar-item w3-button w3-padding-large">PAGES</a>
-        <a href="https://docs.ponjo.club" class="w3-center w3-bar-item w3-button w3-padding-large w3-hide-small">DOCS</a>
-        <a href="https://api.ponjo.club" class="w3-center w3-bar-item w3-button w3-padding-large w3-hide-small">API</a>
-        <a href="https://ponjo.club/elixir" class="w3-center w3-bar-item w3-button w3-padding-large w3-hide-small w3-hide-medium">ELIXIR</a>
-        <a href="https://ponjo.club/team" class="w3-center w3-bar-item w3-button w3-padding-large w3-hide-small w3-hide-medium">TEAM</a>
+        <a href="https://ponjo.club/projects" class="w3-center w3-bar-item w3-button w3-padding-large">PROJECTS</a>
+        <a href="https://ponjo.club/lgbtqfy" class="w3-center w3-bar-item w3-button w3-padding-large">LGBTQfy</a>
+        <a href="https://ponjo.club/lgbtqfy" class="w3-center w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT US</a>
+        <a href="https://ponjo.club/team" class="w3-center w3-bar-item w3-button w3-padding-large w3-hide-small w3-hide-medium">THE TEAM</a>
     </div>
 </div>
 <div class="w3-content" style="max-width: 2000px; margin-top: 46px;">
@@ -60,13 +58,13 @@
             <div class="w3-center" style="">
                 <label for="scale"></label><input class ="w3-padding-16 w3-animate-zoom" id="scale" type="range" min="0.5" max="1.5" step="any" value="1">
             </div>
-            <center>
+            <div style="text-align: center;">
                 <canvas id="canvas" width="300px" height="300px" class="w3-animate-zoom"></canvas>
-            </center>
-            <center>
+            </div>
+            <div style="text-align: center;">
                 <label for="rotate"></label>
                 <input class="w3-padding-16 w3-animate-zoom" id="rotate" type="range" min="-90" max="90" step="any" value="-30">
-            </center>
+            </div>
             <br>
             <label for="file" class="w3-round-large w3-button w3-black w3-animate-zoom">Upload an image!</label>
             <input id='file' type='file' accept='image/*' style="display: none;">
