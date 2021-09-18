@@ -12,6 +12,7 @@ hr.dotted {
 hr.solid {
     border-top: 2px solid #bbb;
     width: 70%;
+    background-color: #111111;
 }
 
 /* Rounded */

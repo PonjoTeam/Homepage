@@ -1,3 +1,11 @@
+// Dynamically loads the page.
+
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+}
+
+// Animates the navbar upon scrolling.
+
 let prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
     const currentScrollPos = window.pageYOffset;
