@@ -9,6 +9,12 @@ body {
 
 html, body {
     overflow-x: hidden;
+    position: fixed;
+}
+
+hr {
+    color: white;
+    fill: white;
 }
 
 body {
@@ -229,7 +235,6 @@ a:hover {
 
 .discord-link:hover {
     text-decoration: underline;
-    color: #b5bac5;
 }
 
 .discord-link:visited {
@@ -272,7 +277,6 @@ a:hover {
 
 .ponjo-link:hover {
     text-decoration: underline;
-    color: #b5bac5;
     transition: 0.3s;
     font-size: 21px;
 }
@@ -291,9 +295,7 @@ a:hover {
 
 .ponjo-icon-link:hover {
     text-decoration: none;
-    color: #b5bac5;
     transition: 0.3s;
-    font-size: 27px;
 }
 
 .ponjo-icon-link:visited {
