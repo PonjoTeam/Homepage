@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Ponjo Team</title>
+    <title>Ponjo Studios</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,7 +35,7 @@
 <a id="about" onclick="showMissionContainer()" class="animated fadeIn" style="animation-delay: 2.2s;">About</a>
 <a id="work" onclick="showProjectsContainer()" class="animated fadeIn" style="animation-delay: 2.2s;">Projects</a>
 <div id="middle" class="animated slideInDown" style="animation-delay: 2.0s;">
-    <h1>Ponjo Team</h1>
+    <h1>Ponjo Studios</h1>
     <h2>Your <a href="https://ponjo.club/about" class="discord-link">next-generation</a> development team.</h2>
     <div id="menu" style="padding: 5px">
         <a onclick="showMissionContainer()">About</a>
@@ -47,139 +47,129 @@
             <td class="animated zoomIn" style="animation-delay: 2.4s;"><a href="https://twitter.com/Eerie6560" class="social"><i class="fab fa-twitter"></i></a></td>
             <td class="animated zoomIn" style="animation-delay: 2.8s;"><a href="https://github.com/PonjoTeam" class="social"><i class="fab fa-github"></i></a></td>
             <td class="animated zoomIn" style="animation-delay: 2.8s;"><a href="mailto:benpetrillo@ponjo.club" class="social"><i class="fas fa-envelope-open-text"></i></a></td>
-            <td class="animated zoomIn" style="animation-delay: 2.8s;"><a href="https://ponjo.club/projects" class="social"><i class="fas fa-code"></i></a></td>
-            <td class="animated zoomIn" style="animation-delay: 2.8s;"><a href="https://ponjo.club/about" class="social"><i class="fas fa-book"></i></a></td>
+            <td class="animated zoomIn" style="animation-delay: 2.8s;"><a href="https://app.ponjo.club" class="social"><i class="fas fa-code"></i></a></td>
+            <td class="animated zoomIn" style="animation-delay: 2.8s;"><a href="https://docs.ponjo.club/about" class="social"><i class="fas fa-book"></i></a></td>
         </tr>
     </table>
 </div>
 <div id="ponjo-projects-container" class="container">
-    <div onclick="closeProjectsContainer()"><i class="fas fa-angle-right"></i></div>
-    <h1>Our Projects</h1>
+    <p>
+        <i class="fas fa-angle-double-left" onclick="closeProjectsContainer()" style="cursor: pointer"></i>
+    </p>
+    <h1>Popular Projects</h1>
+    <p>
+        Note: to view all projects, check out our founder's website <a class="ponjo-link" href="https://benpetrillo.dev/projects">here</a>.
+    </p>
     <section>
-        <h2>What do we work on?</h2>
-        <p>
-            We specialize in both frontend, backend, and fullstack development. Some of our most common projects include
-            Discord bot development, website & web app development, API development, library development, and game plugin development.
-        </p>
-        <p>
-            We work with the following frameworks and libraries:
-        </p>
-        <ul class="ponjo-list">
-            <li>Spigot & Bukkit APIs</li>
-            <li>Discord API (Discord.js & Discord.py)</li>
-            <li>PocketMine-MP</li>
-            <li>Express.js</li>
-            <li>Node.js, Vue.js, & React.js</li>
-            <li>mySQL, SQLite3, & MongoDB</li>
-            <li>Ubuntu 18.04 & CentOS</li>
-            <li>NGINX & Apache</li>
-            <li>Bootstrap</li>
-            <li>And many others...</li>
-        </ul>
-        <p>
-            We also work with the following programming languages:
-        </p>
-        <ul class="ponjo-list">
-            <li>TypeScript</li>
-            <li>JavaScript</li>
-            <li>PHP</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Java</li>
-            <li>Python</li>
-        </ul>
-        <hr>
-        <h2>
-            <i class="fa fa-code ponjo-icon-link"></i> PonjoAPI
-        </h2>
-        <p>
-            The Ponjo API is an easy-to-use REST API for developers, serving all your developer utility needs.
-            Countless endpoints, fast response times, and JSON responses. Integrating utility services into
-            your application has never been easier. Some endpoints include:
-        </p>
-        <ul class="ponjo-list">
-            <li>Utility Endpoint</li>
-            <li>SCP Foundation Endpoint</li>
-            <li>Game Query Endpoint</li>
-            <li>LGBTQ Endpoint</li>
-            <li>Data Endpoint</li>
-            <li>Random Endpoint</li>
-        </ul>
-        <p>
-            If you're interested in the Ponjo API and would like to view its documentation,
-            <a href="https://api.ponjo.club" class="ponjo-link">click here</a>.
-        </p>
-        <h2>
-            <i class="fas fa-robot ponjo-icon-link"></i> RoboEerie
-        </h2>
-        <p>
-            RoboEerie is Eerie (Ben Petrillo)'s personal Discord utility bot, written in TypeScript. It serves a variety of purposes, including
-            moderation, entertainment, providing information/statistics, and more. Some features include:
-        </p>
-        <ul class="ponjo-list">
-            <li>Fully integrated slash commands.</li>
-            <li>Custom join & leave messages.</li>
-            <li>Verification system.</li>
-            <li>Moderation commands (kick, ban, mute).</li>
-            <li>Anti-raid & anti-spam system (configurable).</li>
-            <li>Auto-moderation system (AI-based).</li>
-        </ul>
-        <p>
-            If you're interested, you can <a href="https://github.com/Eerie6560/RoboEerie" class="ponjo-link">view the bot's source code</a>.
-        </p>
-        <h2><i class="fa fa-flag ponjo-icon-link"></i> LGBTQfy</h2>
-        <p>
-            LGBTQfy is an LGBTQ flaired avatar generator. Easily add LGBTQ flairs to your profile picture to express
-            pride in your identity. LGBTQfy also has some API endpoints for developers, to allow them to integrate the
-            avatar generator within their own services and applications. If you'd like to view LGBTQfy,
-            <a href="https://ponjo.club/lgbtqfy" class="ponjo-link">click here</a>.
-        </p>
         <h2>
             <i class="fa fa-headphones ponjo-icon-link"></i> Elixir Music
         </h2>
         <p>
-            Elixir is an advanced Discord music bot for your server.
+            Elixir is an advanced music bot for your Discord server with support for countless platforms. Enjoy your
+            favorite tunes with fast load times, pristine audio quality, and more -- all without the hassle of having
+            to download and install a bunch of software.
         </p>
+        <p>
+            We support popular music platforms like YouTube, Spotify, and Apple Music. You can play music by inputting
+            a search query or by using a direct link to a song. Elixir has 4 separate instances, so different people
+            in your server can listen to different tracks. Unlike any other Discord music bot, Elixir has a powerful
+            queue management system. View all tracks in the queue, and their hyperlinks. Skip to any track in the queue
+            by its position, view data about any track, and more. Arguably Elixir's signature feature, Elixir has a
+            playlist system that allows you to create and share playlists with your friends across Discord. All custom
+            playlists are global and can be viewed and played by all people in Elixir's userbase. Customize your custom
+            playlist to your liking -- add songs, remove songs, add playlists, set the playlist's name, set a
+            description, a cover URL, and more. Configure your playlist to start with a custom volume, a custom loop
+            setting, and extras. Elixir can fetch lyrics for any song you want. This feature is powered by Genius.
+            You can even move your ongoing music queues from one guild to another!
+        </p>
+        <p>
+            In addition, Elixir music also has a fully-functional REST API that allows developers to interact directly
+            with Elixir from their own applications. With easy-to-use endpoints and simple JSON responses, Elixir is a
+            powerful tool for developers to customize our services to their likings.
+        </p>
+        <h3>Key Features</h3>
         <ul class="ponjo-list">
-            <li>
-                Elixir makes it possible to listen to your favorite tunes with all of your friends, with pristine
-                quality indistinguishable from the original soundtrack. With over 30 commands, you'll be able to easily
-                listen to all your favorite tunes, and then some. Elixir makes it easy to add songs or remove songs
-                from your queue. You can also play songs and playlist from other popular applications, including but
-                not limited to Spotify, SoundCloud, and more.
-            </li>
-            <li>
-                Elixir is developed to allow you to play all of your favorite songs with ease, and to get it fully up
-                and running in your Discord server in no time at all. Enjoy music with your friends, and meet new people
-                with similar tastes. Elixir is highly configurable, allowing you to set DJ roles and even prevent
-                duplicate songs from playing.
-            </li>
-            <li>
-                With Elixir, all members of your server will be able to listen to their favorite tunes. If more members
-                are listening to music in voice channels, they are more likely to remain in and become more involved in
-                your community. Elixir makes it easy to enjoy listening to your favorite music with a group of friends
-                or by yourself. What's not to love?
-            </li>
+            <li>Multi-Platform Support</li>
+            <li>Multi-Server Support</li>
+            <li>Advanced Queue Management System</li>
+            <li>Custom Playlist System</li>
+            <li>Custom Playlist Settings</li>
+            <li>Lyrics</li>
         </ul>
         <p>
-            You can <a href="https://docs.ponjo.club" class="ponjo-link">view Elixir's documetation</a> or
-            <a href="https://ponjo.club/invites/elixir" class="ponjo-link">invite the bot</a>.
+            If you're interested Elixir Music and would like to learn more,
+            <a href="https://docs.ponjo.club" class="ponjo-link">click here</a>.
         </p>
         <h2>
-            <i class="fas fa-search-minus ponjo-icon-link"></i> Matte.css
+            <i class="fa fa-code ponjo-icon-link"></i> Ponjo API
         </h2>
         <p>
-            Seamlessly style your frontend projects with this clean & minimalistic CSS library. With a clean
-            materialistic approach, your frontend projects will become pleasant to view and easy to navigate. The library
-            is currently in development. If you'd like to view its source code, <a href="https://github.com/Eerie6560/Matte.css" class="ponjo-link">click here</a>.
+            The Ponjo API is a powerful REST API that serves all your developer utility needs. Countless endpoints,
+            fast response times, and JSON responses. Integrating utility services into your application has never been
+            easier. Easily integrate cool features to your Discord bots and other applications, and obtain various types
+            of data from the endpoints.
+        </p>
+        <p>
+            If you're looking for an API with a reliable uptime and tons of features at your disposal, the Ponjo API
+            is for you. With easy-to-read documentation and a robust selection of resources, you'll be able to add
+            powerful components to your projects in no time.
+        </p>
+        <p>
+            Learn more <a href="https://app.ponjo.club" class="ponjo-link">here</a>.
+        </p>
+        <h2><i class="fa fa-flag ponjo-icon-link"></i> LGBTQfy & Pronoun API</h2>
+        <p>
+            LGBTQfy is a simple LGBTQIA+ pride avatar generator. Easily express yourself and your identity by adding
+            pride flag colors & flairs around your profile picture for use on popular social media platforms.
+            <a href="https://ponjo.club/lgbtqfy" class="ponjo-link">click here</a>.
+        </p>
+        <p>
+            For developers: the pride flair generation feature also has a public API. To learn more about this, check
+            out the Pronoun API; more info can be found below.
+        </p>
+        <h3>Pronoun API</h3>
+        <p>
+            The Pronoun API is an advanced LGBTQ+ resource and utility API that provides developers with all the
+            resources they would ever need to fuse their applications with LGBTQ content, data, and assets.
+
+            This API is embedded into the Ponjo API and provides the following features: a plethora of pride flags that
+            can be easily accessed and used in your applications, a pronoun dictionary and data lookup in JSON format,
+            an endpoint to add pride flairs to profile pictures, a full sexual orientation wiki in JSON format, and more.
+        </p>
+        <p>
+            Learn more <a href="https://ponjo.club/lgbtqfy" class="ponjo-link">here</a>.
+        </p>
+        <h2>
+            <i class="fas fa-search-minus ponjo-icon-link"></i> PonjoPastes
+        </h2>
+        <p>
+            PonjoPastes is a functional text block platform that allows you to easily share snippets of code or text blocks
+            with your friends. Annoyed by a character limit for your favorite messaging application? PonjoPastes has
+            you covered.
+        </p>
+        <p>
+            PonjoPastes has an easy-to-use REST API that allows developers to create, publish, and fetch pastes by
+            ID. All responses are returned in an easy-to-understand JSON format. The API is perfect if you'd like to
+            create or access pastes from your own services. With detailed documentation available on our website, you'll
+            be able to use the API in no time.
+        </p>
+        <p>
+            PonjoPastes has a feature that automatically detects the programming language of a specific block of code
+            and highlights syntax accordingly. First, specify whether you'd like your snippet to be highlighted. Then,
+            create a title, then submit. Simple, slick, elegant.
+        </p>
+        <p>
+            Learn more or try it out <a href="https://pastes.ponjo.club" class="ponjo-link">here</a>.
         </p>
         <h2>
             <i class="fa fa-shield-alt ponjo-icon-link"></i> SCP-062
         </h2>
         <p>
-            SCP-062 is a Discord bot for the SCP Foundation, an organization securing, containing, and protecting
-            supernatural anomalies from the outside world. Its CPU power permits access to classified foundation
-            data, so be warned! If you'd like to invite the bot, <a href="https://ponjo.club/invites/scp062" class="ponjo-link">do so if you dare</a>.
+            SCP-062 OS is a Discord bot for the SCP Foundation. It permits foundation personnel of Level I or higher to
+            access anomaly data and other foundation information. The bot has a wide variety of features, including
+            but not limited to: fetching information on any SCP anomaly, a feature to listen in to the SCP Foundation's
+            radio, and easy access to the Foundation's branches, sites, areas, and containment procedures for specific
+            anomalies. View its source code <a href="https://github.com/Eerie6560/SCP-062-OS" class="ponjo-link">here</a>.
         </p>
         <ul class="ponjo-list">
             <li>Retrieve data on any SCP item.</li>
@@ -193,30 +183,29 @@
         </h2>
         <p>
             Helios Practice was a public Minecraft practice PVP server for the Bedrock Edition variant of the game.
-            The network reached a total of more than 9400 registered players and a peak of 32 concurrently online players.
-
-            Due to a lack of developer motivation and interest in the Minecraft Bedrock Edition community itself, as
-            well as the notorious reason of financing, Helios Practice closed official on February 1st, 2021, marking
-            the end of the server's 8-month period, being officially released on June 14th, 2020.
+            The network reached a total of more than 9400 registered players and a peak of 32 concurrently online
+            players. Due to a lack of developer motivation, time, and interest in the Minecraft Bedrock Edition
+            community itself, as well as the notorious reason of financing, Helios Practice closed official on February
+            1st, 2021, marking the end of the server's 8-month period, being officially released on June 14th, 2020.
         </p>
     </section>
 </div>
 <div id="ponjo-mission-container" class="container">
-    <div onclick="closeMissionContainer()">
-        <i class="fas fa-angle-left"></i>
-    </div>
+    <p>
+        <i class="fas fa-angle-double-right" onclick="closeMissionContainer()" style="cursor: pointer"></i>
+    </p>
     <h1>Our Mission</h1>
     <section>
         <h2>A group of developers dedicated to the greater community.</h2>
         <p>
             We are a group of committed developers and hardworking organizers with the goal to develop customized
             programs and software for our clients. We are committed to our work, and we dedicate ourselves to create
-            work that benefits the public. The Ponjo Development Team was initially founded as a side hobby, but it has
-            become much more than that since then. We're dedicated to serving the community and providing numerous
-            open-source projects for educational purposes: we want to inspire existing developers and help them learn
-            more about the development workspace.
+            work that benefits the public. The Ponjo Development Team was initially founded as a side hobby, but it
+            has become much more than that since then.
         </p>
         <p>
+            We're dedicated to serving the community and providing numerous open-source projects for educational
+            purposes: we want to inspire existing developers and help them learn more about the development workspace.
             Being a member of a development team is much more than simply coding. It's about collaborating with fellow
             developers, about planning & testing projects and applications, about analyzing existing work. No one
             person has all the necessary skills to complete a project: it's about working together.
@@ -228,12 +217,52 @@
             development workspace. Remember ─ the sky's the limit.
         </p>
         <p>
-            ─ Ben Petrillo, Founder & Lead Developer
+            Ben Petrillo <br>
+            Founder & Lead Software Engineer <br>
+            Ponjo Development Studios <br>
+            Northeastern University '26 <br>
+            <a class="ponjo-link" href="mailto:benpetrillo@ponjo.club">benpetrillo@ponjo.club</a>
         </p>
+        <h2>What do we work on?</h2>
+        <p>
+            We specialize in both frontend, backend, and fullstack development. Some of our most common projects include
+            Discord bot development, website & web app development, API development, library development, and game plugin development.
+        </p>
+        <p>
+            We work with the following frameworks and libraries:
+        </p>
+        <ul class="ponjo-list">
+            <li>Bootstrap</li>
+            <li>Node.js</li>
+            <li>NPM</li>
+            <li>MongoDB</li>
+            <li>SQLite, MySQL</li>
+            <li>Discord API</li>
+            <li>PocketMine-MP</li>
+            <li>Express.js</li>
+            <li>React</li>
+            <li>Vue</li>
+            <li>Apache</li>
+            <li>Ubuntu</li>
+            <li>NGINX</li>
+            <li>And many others...</li>
+        </ul>
+        <p>
+            We also work with the following programming languages:
+        </p>
+        <ul class="ponjo-list">
+            <li>Java</li>
+            <li>TypeScript</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>PHP</li>
+            <li>HTML</li>
+            <li>CSS</li>
+        </ul>
     </section>
 </div>
 <div id="footer" style="padding-bottom: 12px">
-    Copyright 2020-21 Ponjo Team.<br> <a href="https://benpetrillo.dev">Ben Petrillo</a> - <a href="mailto:benpetrillo@ponjo.club">benpetrillo@ponjo.club</a>
+    Copyright 2022 Ponjo Studios.<br> <a href="https://benpetrillo.dev">Ben Petrillo</a> - <a href="mailto:benpetrillo@ponjo.club">benpetrillo@ponjo.club</a>
 </div>
 <script src="assets/scripts/home/Animator.js" type="text/javascript"></script>
 <script src="assets/scripts/animation/Particles.js"></script>
